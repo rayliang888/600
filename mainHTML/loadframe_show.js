@@ -1,2 +1,0 @@
-$('#loadingframe').hide();
-$('#loadframe').show();

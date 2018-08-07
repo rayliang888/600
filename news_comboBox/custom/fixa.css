@@ -1,0 +1,35 @@
+
+    .input_item{
+        margin-top: 7px;
+        font-size: 20px;
+    }
+    .input_check{
+        font-size: 14px;
+        color: brown;
+    }
+
+    .table_output1{
+        border-collapse: collapse;
+    }
+    .table_output1 td{
+        border: 2px solid black;
+    } 
+    .output1Color,.output2Color{
+        background-color:burlywood;
+    }
+    
+    .text_dollar{
+        text-align: right;
+    }
+    .img_assets{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+	.btnSize{
+		margin-left: 20px;
+		width: 100px;
+		height: 25 px;
+	}

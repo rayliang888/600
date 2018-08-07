@@ -12,31 +12,29 @@
 <meta name="description" content="提供農漁資訊共用相關說明">		
 <script src="JQuery/jquery-1.11.3.min.js"></script>  
   
-
-</head>    
-<body>	
-<div id="loadingframe" class="loadingframe">Loading.....</div>
-<div id="loadframe" class="loadFrame">	
-<script src="mainHTML/loadframe_hide.js"></script>  	
-	 <div id="publicHeader">
-			<script>
-			  var JSstring03 = 'mainHTML/mainHTML_data1.js?'+Math.random();    
-			  document.write("<script src="+JSstring03+"></scr"+"ipt>");	
-			</script>  
-	 </div>
-	 <div id="main" class="main" >
-
-			<div class="mainBox">
-				<div class="mainBox_relative">
-					<div class="mainBox_bg"></div>
-					<div class="mainBox_skin"></div>
-					<div id="mainBox_content" class="mainBox_content">
-						<!--main-->
 <link rel="stylesheet" type="text/css" href="news_comboBox/comboBox.css">
 <link rel="stylesheet" type="text/css" href="news_comboBox/comboBox_patch1.css">
 <link rel="stylesheet" type="text/css" href="news_comboBox/SideNav.css">
 <link rel="stylesheet" type="text/css" href="news_comboBox/SideNav_patch1.css">		
-<link rel="stylesheet" type="text/css" href="news_comboBox/SideNav_patch2.css">
+<link rel="stylesheet" type="text/css" href="news_comboBox/SideNav_patch2.css">	
+<link rel="stylesheet" type="text/css" href="news_comboBox/custom/fixa.css">		
+	
+</head>    
+<body>
+ <div id="publicHeader">
+		<script>
+		  var JSstring03 = 'mainHTML/mainHTML_data1.js?'+Math.random();    
+		  document.write("<script src="+JSstring03+"></scr"+"ipt>");	
+		</script>  
+ </div>
+ <div id="main" class="main" >
+
+        <div class="mainBox">
+            <div class="mainBox_relative">
+                <div class="mainBox_bg"></div>
+                <div class="mainBox_skin"></div>
+                <div id="mainBox_content" class="mainBox_content">
+                   <!--main-->
 					<div class="frame1">
 						<div id="frame1_navBox" class="frame1_navBox">
 						</div>
@@ -45,29 +43,34 @@
 					</div>
 
 					<script src="news_comboBox/SideNav_Data.js"></script>		
-					<script src="news_comboBox/SideNav_patch.js"></script>	
-					<script src="news_comboBox/comboBoxPatch1.js"></script>
-					<script src="news_comboBox/comboBox.js"></script>						
-						<!--main-->
-					</div>
-				</div>    
-			</div>
-			<div id="main_dark" class="main_dark"> </div>
-	 </div>
-	 <div id="publicFooter">
-			<script>
-			  var JSstring04 = 'mainHTML/mainHTML_data2.js?'+Math.random();    
-			  document.write("<script src="+JSstring04+"></scr"+"ipt>");	
-			</script>  
-	 </div>
-	<script>
-		var JSstring01 = 'mainHTML/mainHTML.css?v={'+Math.random()+'}';    
-		document.write("<link href="+JSstring01+" rel=\"stylesheet\" type=\"text/css\">");  
-		var JSstring02 = 'mainHTML/mainHTML.js?'+Math.random();    
-		document.write("<script src="+JSstring02+"></scr"+"ipt>");
-	</script> 
-</div>	
-	
-<script src="mainHTML/loadframe_show.js"></script>  	
+					<script src="news_comboBox/SideNav_patch.js"></script>
+					<script src="news_comboBox/comboBox_Data.js"></script>
+					<script src="news_comboBox/comboBox.js"></script>
+					<script src="news_comboBox/custom/fixa_data.js"></script>
+					<script src="news_comboBox/custom/fixa_verification.js"></script>
+				   <!--main-->
+					
+                </div>
+            </div>    
+        </div>
+        <div id="main_dark" class="main_dark"> </div>
+ </div>
+ <div id="publicFooter">
+	 	<script>
+		  var JSstring04 = 'mainHTML/mainHTML_data2.js?'+Math.random();    
+		  document.write("<script src="+JSstring04+"></scr"+"ipt>");	
+		</script>  
+ </div>
+
+   	
+
+
+<script>
+	  var JSstring01 = 'mainHTML/mainHTML.css?v={'+Math.random()+'}';    
+	  document.write("<link href="+JSstring01+" rel=\"stylesheet\" type=\"text/css\">");  
+
+	  var JSstring02 = 'mainHTML/mainHTML.js?'+Math.random();    
+	  document.write("<script src="+JSstring02+"></scr"+"ipt>");
+</script> 
 </body>
 </html>

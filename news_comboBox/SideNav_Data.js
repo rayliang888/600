@@ -30,7 +30,7 @@ demo(Dstring2):
 			"<div id=\"a"+no+"\" class=\"frame1_navBox_item\"></div>";
 	}
 	
-	for(i=1;i<=11;i++){
+	for(i=1;i<=5;i++){
 		DOMcreate(i);
 	}
 	
@@ -40,17 +40,17 @@ demo(Dstring2):
 //function DataBinding(no)
 /*************/    
     var title = ["",
-                 "存摺存款",
-                 "定期存款",
-                 "定期存款(櫃員操作)",
-                 "支票存款",
-                 "公庫存款",
-                 "放款業務",
-                 "金融卡暨ATM",
-                 "電話語音業務",
-                 "網路銀行",
-                 "國內匯款及代收業務",
-                 "代繳公用事業及其他費用"
+                 "驗算項目",
+                 "填寫試算參考",
+                 "系統試算參考",
+                 "會計金額解釋",
+                 "其他Q&A",
+                 "",
+                 "",
+                 "",
+                 "",
+                 "",
+                 ""
                 ];
     var content = ["",
 				   "",
@@ -81,7 +81,7 @@ demo(Dstring2):
 		document.getElementById("t"+no).innerHTML = title[no];
 		document.getElementById("c"+no).innerHTML = content[no];
 	}
-	for(i=1;i<=11;i++){
+	for(i=1;i<=5;i++){
 		DataBinding(i);
 	}
 /************/
@@ -93,8 +93,9 @@ demo(Dstring2):
             });   
     }
 	
-	for(i=1;i<=14;i++){
+	for(i=1;i<=5;i++){
 		//scrollTopSet("#a"+i,"#f"+i);
 	}
 		
 
+    
