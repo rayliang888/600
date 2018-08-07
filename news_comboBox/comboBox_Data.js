@@ -25,8 +25,7 @@
 		</div>
    </div>
 */
-ComboBoxDom('c1',101,103);
-ComboBoxDom('c2',201,203);
+ComboBoxDom('c5',501,504);
 function ComboBoxDom(domArea,intStartItemNo,intEndItemNo){
 	//domArea 
 	//intStartItemNo: ComboBox_item開始id
@@ -72,33 +71,23 @@ function ComboBoxDom(domArea,intStartItemNo,intEndItemNo){
 //<div id="c1" class="frame1_contentBox_item_content"></div>  DataBinding
 var txtCombo = new Array();
 /*陣列規格:[c1(dom:id)] [no] [txt]*/
-	txtCombo[1] =
+	txtCombo[5] =
 	[
 	[],	
 	["1",
-	 "加入共用帳務系統，原農漁會分會名稱會變嗎?",
-	 "不會更名。僅金融機構代號、通匯代號會重編。"],
+	 "我能夠使用這個驗算工具嗎?",
+	 "此驗算功能限有上線固定資產的農漁會使用，並協助A6500、A6600驗算。"],
 	["2",
-	 "加入共用帳務系統後，原農漁會的存摺還可以使用嗎？",
-	 "不可以。因合併採行共用中心主機系統，請於正式上線日前儘速至原農漁會各本分會補登未登摺之資料。"],
+	 "如果固定資產沒有與共用系統一同上線，那可以再將來補上線嗎？",
+	 "可以。請聯絡02-23802732陳先生，討論上線事宜"],
 	["3",
-	 "加入共用帳務系統後，原農漁會的存款帳號有改變嗎？",
-	 "有變更。共用帳務系統之存款帳號統一為14位，請向原開戶單位查明合併後之存款帳號。"]
+	 "如果固定資產上線後，攤提方式不適用，可以下線嗎？",
+	 "可以。請聯絡02-23802732陳先生，討論下線事宜"],
+	["4",
+	 "如果試算的結果與現行不同，要寫需求單嗎？",
+	 "不用。使用A6600交易修改即可"],	
 	];
 
-	txtCombo[2] =
-	[
-	[],
-	["1",
-	 "原農漁會定存單是否到期後才更換？利率會變更嗎？有續存寬緩期間嗎？",
-	 "原農漁會定存單轉入共用帳務系統後，如原先已有約定進行展期，則仍會依原存單進行展期，無須辦理換單事宜。<br><br>轉入共用帳務系統後，採「固定」利率仍依當初約定之利率計息。採「機動」利率者，依存單存期間，如農漁會牌告利率有調整時，則依該存單期別所調整之各牌告利率分段計息計息。<br><br>存單有續存寬緩期(定存一個月、定儲二個月) 。"],
-	["2",
-	 "原農漁會存單須轉換？",
-	 "原存單帳號會變更，但無須來行更換。"],
-	["3",
-	 "綜合存款轉定存之存續寬緩期間為何？",
-	 "定存一個月、定儲二個月。"]
-	];
 
 
  //document.getElementById("a"+no).innerHTML = title[no];
@@ -109,13 +98,15 @@ function DataBinding2(d1,d2,No){
 	$('#ComboBox_item'+No).children('.ComboBox_content').append(txtCombo[d1][d2][2]);
 }
 
-DataBinding2(1,1,101);
-DataBinding2(1,2,102);
-DataBinding2(1,3,103);
+DataBinding2(5,1,501);
+DataBinding2(5,2,502);
+DataBinding2(5,3,503);
+DataBinding2(5,4,504);
 
-DataBinding2(2,1,201);
-DataBinding2(2,2,202);
-DataBinding2(2,3,203);
+
+
+
+
 
 
 

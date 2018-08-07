@@ -3,12 +3,10 @@ $(document).ready(function(){
 	//checkFlag('#ComboBox_item2');
 	//checkFlag('#ComboBox_item3');
 	
-	for(i=101;i<=103;i++){
+	for(i=501;i<=504;i++){
 		checkFlag('#ComboBox_item'+i);
 	}
-	for(i=201;i<=203;i++){
-		checkFlag('#ComboBox_item'+i);
-	}
+
 		
 });	
 		
