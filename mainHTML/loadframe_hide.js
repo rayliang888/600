@@ -1,0 +1,1 @@
+$('#loadframe').hide();

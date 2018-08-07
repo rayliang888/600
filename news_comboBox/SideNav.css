@@ -1,0 +1,72 @@
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	.frame1{
+		background-color: beige;
+		position: relative;
+	}
+	.frame1_navBox{
+		position: fixed;
+		top:0;
+		width: 30%;
+		height: 100%;
+		left: 0;
+		background-color: #b3b3b3;
+		overflow-y: auto;
+	}
+	.frame1_navBox_item{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #f2f2f2;
+		cursor: pointer;
+		
+	}
+	.frame1_navBox_item:last-child{
+		border-bottom-width: 1px;
+	}
+	.frame1_contentBox{
+		position: relative;
+		top:0;
+		width: 70%;
+		left: 30%;
+		background-color: darkkhaki;
+	}
+	.frame1_contentBox_item{
+		background-color: cornflowerblue;
+	}
+	.frame1_contentBox_item_title{
+		height:50px;
+		text-align:center;
+		line-height: 50px;
+	}
+
+	.frame1_contentBox_item_content{
+			background-color: antiquewhite;
+			padding: 5px;
+			font-size: 20px;
+			min-height: 200px;
+	}
+	.frame1_contentBox_item_title_text::before,.frame1_contentBox_item_title_text::after{
+		content: '－';
+	}
+	.textEmphasis1{
+		color: brown;
+	}
+	.textEmphasis2{
+		color:darkblue;
+	}
+	@media (max-width:1000px){/*手機*/
+		.frame1_contentBox{
+		position: relative;
+		top:0;
+		width: 100%;
+		left: 0;
+		}
+		.frame1_navBox{
+			display: none;
+		}
+	} 	
