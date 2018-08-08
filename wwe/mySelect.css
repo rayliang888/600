@@ -1,0 +1,524 @@
+
+/*********************************************************************************/
+/*************************************查詢結果*************************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+/***********************切版************************/
+#AF_position{
+    position: relative;
+    margin-top: 20px;
+    
+}
+#F_position{
+    position: absolute;
+    top:-25px;
+    left: 7%;
+}
+
+#F{ 
+    position: relative;
+    height: 35px;
+}
+#F_foot{
+    position: relative;
+    height: 25px;
+}
+#F_input{
+    position: absolute;
+}
+#F_record{
+    position: absolute;
+    left: 290px;
+    margin-top: 5px;
+    color:#006600;
+    font-size: 16px;
+}
+                                            @media (max-width:800px){/*phone*/
+                                                #F_position{
+                                                    top:-20px;
+                                                }
+                                                #F{
+                                                    height: 30px;
+                                                }
+                                                #F_foot{
+                                                    height: 18px;
+                                                }
+                                                #F_record{
+                                                position: absolute;
+                                                left: 220px;
+                                                margin-top: 5px;    
+                                                font-size: 14px;
+                                            }
+							                 }
+/******************************************/
+#F_style{
+background: rgb(201,222,150);
+background: -moz-linear-gradient(45deg, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 40%, rgba(57,130,53,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 40%,rgba(57,130,53,1) 100%);
+background: linear-gradient(45deg, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 40%,rgba(57,130,53,1) 100%);
+    
+                /*   x,   y,   距離,  color  */
+    box-shadow:0px 2px 2px rgba(20%,20%,40%,0.6),
+               0px 4px 6px rgba(20%,20%,40%,0.4);
+
+    font-size:24px;
+    max-width: 480px;
+    
+    padding-top: 7px;   
+    padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 16px;
+    
+    border-color: #454545;
+    border-style: solid;
+    border-width: 2px;
+    
+    border-top-left-radius: 36px;
+	border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 36px;
+    
+    transition:1s;
+      
+  /*  transform:rotate(-3deg);
+-ms-transform:rotate(-3deg); /* IE 9 */
+/*-moz-transform:rotate(-3deg); /* Firefox */
+/*-webkit-transform:rotate(-3deg); /* Safari and Chrome */
+/*-o-transform:rotate(-3deg); /* Opera */
+  /*  transform-origin:0% 100%;/*參數是X,y座標*/
+    
+    /*動畫調以下兩個*/
+    transform-origin:0% 100%;/*transform定位，參數是X,y座標*/
+    animation: F_style_animation  linear 2s infinite alternate;
+}
+
+                                            @media (max-width:800px){/*phone*/
+                                               #F_style{
+                                                    font-size:18px;
+                                                }
+							                 }
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes F_style_animation {
+    0%   {transform:rotate(-3deg);}
+    50%  {transform:rotate(-6deg);}
+    100% {transform:rotate(-3deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes F_style_animation {
+    0%   {transform:rotate(-3deg);}
+    50%  {transform:rotate(-6deg);}
+    100% {transform:rotate(-3deg);}
+}
+
+/*#F_style:hover{/*變更角度*/
+/*        transform:rotate(-10deg);
+-ms-transform:rotate(-10deg); /* IE 9 */
+/*-moz-transform:rotate(-10deg); /* Firefox */
+/*-webkit-transform:rotate(-10deg); /* Safari and Chrome */
+/*-o-transform:rotate(-10deg); /* Opera */
+    
+/*}*/
+
+
+
+/***************list*******************/
+#AF_List{
+    /*#FFBFBF~#f8ffe8*/
+background: rgb(248,255,232);
+background: -moz-radial-gradient(center, ellipse cover, rgba(248,255,232,1) 0%, rgba(255,191,191,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(248,255,232,1) 0%,rgba(255,191,191,1) 100%);
+background: radial-gradient(ellipse at center, rgba(248,255,232,1) 0%,rgba(255,191,191,1) 100%);
+  
+    transition:1s;
+    
+    padding-top: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 20px;
+    
+    border-top-left-radius: 80px;
+	border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+	border-bottom-right-radius: 80px;
+    
+    border-color: #454554;
+    border-style: solid;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    
+}
+                                            @media (max-width:800px){/*phone*/
+                                               #AF_List{
+                                                    padding-left: 5px;
+                                                    padding-right: 5px;
+                                                   
+                                                       border-top-left-radius: 40px;
+                                                       border-top-right-radius: 40px;
+                                                       border-bottom-left-radius: 40px;
+                                                       border-bottom-right-radius: 40px;
+                                                }
+							                 }
+
+/********************DB**********************/
+#AF_ID{
+    
+    font-size: 65px;
+    margin-bottom: -10px;
+    font-weight:bold;/*粗體*/
+    color: #441400; 
+    
+}
+#AF_name{
+    font-size: 32px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    
+    letter-spacing:1px;/*字距*/
+}
+
+
+.AF_data{
+    font-size: 22px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+#AF_name_content_a{
+    color: #B7006B; 
+    transition: 0.5s;
+}
+#AF_name_content_a:hover{
+    color: #EA7125 ; 
+}
+
+
+                                            @media (max-width:800px){/*phone*/
+                                                        #AF_ID{
+                                                            margin-bottom: -10px;
+                                                            font-size: 45px;
+                                                        }
+                                                        #AF_name{
+                                                            font-size: 26px;
+                                                            letter-spacing:0px;/*字距*/
+
+                                                        }
+
+                                                        .AF_data{
+                                                            font-size: 15px;
+                                                            /*凸排margin-left : 49px; text-indent : -49px ;*/
+                                                        }
+							                 }
+/**********************TABLE************************/
+#AF_Table{
+    margin-top: 16px;
+    display: block;
+}
+
+
+
+#mySelectList tbody{
+	max-width: 100%;
+}
+
+#mySelectList td{
+ 
+	font-size:22px;
+	border-style:solid;
+	border-color: #2d5986;
+	border-width:2.6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	text-align:center;
+    
+	/*全體透明(霧面)*/
+	/*background-color:#ffffff;
+    opacity:0.4;*/
+    
+    /*只有背景透明*/
+     background-color: rgba(255,255,255,0.25);
+    
+    color: black;
+    
+}
+
+ .TableContextHyperlinks{
+     text-align:left  !important ; 
+}
+.TableContextHyperlinksText{
+    color: #1f1f7a;
+    transition: 0.3s;
+}
+.TableContextHyperlinksText:hover{
+    color:#7070db;
+}
+.mySelectList_Phone{/*電話*/
+    word-break: break-all;
+    letter-spacing:2px;/*字距*/
+}
+
+
+
+
+                                            @media (max-width:800px){/*phone*/
+                                                #mySelectList td{
+                                                    font-size:14px;
+                                                    letter-spacing:0px;
+                                                }
+                                                .mySelectList_Phone{/*電話*/
+                                                    word-break: break-all;
+                                                    letter-spacing:0px;/*字距*/
+                                                }
+							                 }
+                                            @media (max-width:500px){/*phone*/
+                                                #mySelectList td{
+                                                    padding-left: 1px;
+                                                    padding-right: 1px;
+                                                }
+							                 }
+
+
+
+
+
+#mySelectList tr:first-child{
+    /*只有背景透明*/
+     background-color: rgba(68, 20, 0,0.2);
+}
+
+
+
+
+/***************MAP****************************/
+#AF_Map_iframe{
+    height: 600px;
+    transition:1s;
+}
+                							@media (max-width:800px){/*phone*/
+                                                #AF_Map_iframe{
+                                                    height: 350px;
+                                                }
+							                 }
+/*********************************************************************************/
+/********************************查詢條件******************************************/
+/*********************************************************************************/
+/*********************************************************************************/
+#AF_input{
+    background-color: #b5c1b4;
+
+    border-top-color: #81a3a7;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-color: #81a3a7;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    
+}
+#AF_input_content{
+    background-color: #dcd9c9;
+    height: 260px;
+    overflow-y:scroll;
+    
+
+}
+
+#F_input{
+    width: 270px;
+    font-size: 16px;
+    margin-bottom:4px;
+    margin-top: 4px;
+    margin-left: 10px;
+        
+    
+}
+
+                                            @media (max-width:800px){/*phone*/
+                                                #F_input{
+                                                    width: 200px;
+                                                    font-size: 13px;
+                                                }
+							                 }
+
+
+.AF_input_content_item{
+    width: 17.6%;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0px;
+    background-color: #74593d;/*設BUTTOM的background，框會變立體*/
+    font-size: 20px;
+    /*transition: 2s;*/
+}
+                                            @media (max-width:1200px){/*phone*/
+                                                .AF_input_content_item{     
+                                                    font-size: 17px;
+                                                }
+                                            }
+                                            @media (max-width:1000px){/*phone*/
+                                                .AF_input_content_item{
+                                                    width: 20.6%;
+                                                    margin-left: 2%;
+                                                    margin-right: 2%;        
+                                                    font-size: 16px;
+                                                }
+                                            }
+
+                			                 @media (max-width:800px){/*phone*/
+                                                .AF_input_content_item{
+                                                    width: 28.3%;
+                                                    margin-left: 2%;
+                                                    margin-right: 2%;
+                                                    font-size: 16px;
+                                                }
+                                            }
+
+                			                 @media (max-width:600px){/*phone*/
+                                                .AF_input_content_item{
+                                                    width: 45%;           
+                                                    margin-left: 2%;
+                                                    margin-right: 2%;
+                                                    height: 27px;
+                                                    font-size: 16px;
+                                                    margin-top: 4px;
+                                                    
+                                                }
+							                 }
+                			                 @media (max-width:400px){/*phone*/
+                                                .AF_input_content_item{
+                                                    font-size: 14px;
+                                                }
+                                            }
+
+                                            /*@media (max-width:900px){/*phone*/
+                                                /*.AF_input_content_item{
+                                                    width: 43%;                             
+                                                    margin-top: 1px;
+                                                    margin-bottom: 1px;
+                                                    margin-left: 3%;
+                                                    margin-right: 3%;
+                                                }
+							                 }*/
+
+
+                							/*@media (max-width:500px){/*phone*/
+                                            /*    .AF_input_content_item{
+                                                    width: 90%;                             
+                                                    margin-top: 1px;
+                                                    margin-bottom: 1px;
+                                                    margin-left: 5%;
+                                                    margin-right: 5%;
+                                                }
+							                 }*/
+/*BUTTON內的圖層*/
+.AF_input_content_item-Area-1{
+    position: relative;
+    background-color: #74593d;
+    width: 100%;
+    height: 100%;
+}
+.AF_input_content_item-Area-2{
+    position: absolute;
+    background-color: #3f3232;
+    
+    left: 10%;/*left*2+width=100*/
+    width: 80%;/*left*2+width=100*/
+    height: 100%;
+    -webkit-transform: translate(0px, 0px) rotate(0deg) skew(20deg, 0deg) scale(1, 1); 
+    -moz-transform: translate(0px, 0px) rotate(0deg) skew(20deg, 0deg) scale(1, 1); 
+    -o-transform: translate(0px, 0px) rotate(0deg) skew(20deg, 0deg) scale(1, 1); 
+    -ms-transform: translate(0px, 0px) rotate(0deg) skew(20deg, 0deg) scale(1, 1); 
+    transform: translate(0px, 0px) rotate(0deg) skew(20deg, 0deg) scale(1, 1); 
+}
+.AF_input_content_item-Area-3{
+        position: absolute;
+    background-color: #3f3232;
+    
+    left: 10%;/*left*2+width=100*/
+    width: 80%;/*left*2+width=100*/
+    height: 100%;
+    -webkit-transform: translate(0px, 0px) rotate(0deg) skew(-20deg, 0deg) scale(1, 1); 
+    -moz-transform: translate(0px, 0px) rotate(0deg) skew(-20deg, 0deg) scale(1, 1); 
+    -o-transform: translate(0px, 0px) rotate(0deg) skew(-20deg, 0deg) scale(1, 1); 
+    -ms-transform: translate(0px, 0px) rotate(0deg) skew(-20deg, 0deg) scale(1, 1); 
+    transform: translate(0px, 0px) rotate(0deg) skew(-20deg, 0deg) scale(1, 1); 
+}
+.AF_input_content_item-Area-4{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+                                            @media (max-width:400px){/*phone*/
+                                                .AF_input_content_item-Area-4{     
+                                                    top:2px;
+                                                }
+                                            }
+                                            @media (min-width:1200px){/*phone*/
+                                                .AF_input_content_item-Area-4{     
+                                                    top:-2px;
+                                                }
+                                            }
+/********************************************************/
+/**********************下拉選子項目-自訂搜尋************************/
+/********************************************************/
+  .CustomButton,.CustomButton2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;  
+}
+
+
+  .CustomButton2{   
+    margin-left: 6px;
+    margin-top: 15px;
+}
+
+.CustomButton2_label{
+      font-size: 16px;
+      
+}
+
+
+
+/*******************************************************************/
+/****************************Modal *********************************/
+/*******************************************************************/
+
+.modal_icon{
+    border-style:inset; 
+    border-color: #cccccc;
+    border-width:2px;
+    padding: 2px;
+    
+    background: #eeeeee;
+    white-space:nowrap;/*不換行*/
+    
+}
+.modal_p{
+    line-height: 35px;
+}
+                                            @media (min-width:800px){/*桌上*/
+                                                    .modal_p{
+                                                       font-size: 16px;
+                                                       line-height: 40px;
+                                                    }   
+                                            }

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw">
+<title>農漁資訊共用Q&A</title>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+<meta http-equiv="Cache-Control"  content="no-cache">		
+<meta name="keywords" content="農漁資訊共用,QA,農漁資訊" />
+<meta name="description" content="提供農漁資訊共用相關說明">		
+<script src="JQuery/jquery-1.11.3.min.js"></script>  
+  
+
+</head>    
+<body>	
+<div id="loadingframe" style="position:fixed;top:49%;left: 35%;">Loading.....</div>
+<div id="loadframe" class="loadFrame">	
+<script src="mainHTML/loadframe_hide.js"></script>  	
+	 <div id="publicHeader">
+			<script>
+			  var JSstring03 = 'mainHTML/mainHTML_data1.js?'+Math.random();    
+			  document.write("<script src="+JSstring03+"></scr"+"ipt>");	
+			</script>  
+	 </div>
+	 <div id="main" class="main" >
+
+			<div class="mainBox">
+				<div class="mainBox_relative">
+					<div class="mainBox_bg"></div>
+					<div class="mainBox_skin"></div>
+					<div id="mainBox_content" class="mainBox_content">
+						
+						
+						
+<!--content-->					
+<div id="AF_input">
+	<form id="F">
+		<select id="F_input" name="SelectMode" onchange="getSelectMode();">
+			<option value="1">
+				全部
+			</option>
+			<option value="0">
+				自訂搜尋
+			</option>
+			<option value="9">
+				農會
+			</option>
+			<option value="10">
+				漁會
+			</option>
+			<option value="22">
+				原中農系統
+			</option>
+			<option value="23">
+				原北農系統
+			</option>
+			<option value="24">
+				原自營系統
+			</option>
+			<option value="2">
+				105年度上線
+			</option>
+			<option value="3">
+				106年度上線
+			</option>
+			<option value="20">
+				107年度上線
+			</option>
+			<option value="26">
+				台北市
+			</option>
+			<option value="18">
+				新北市
+			</option>
+			<option value="21">
+				宜蘭縣
+			</option>
+			<option value="25">
+				新竹縣
+			</option>
+			<option value="5">
+				苗栗縣
+			</option>
+			<option value="19">
+				花蓮縣
+			</option>
+			<option value="6">
+				台中市
+			</option>
+			<option value="8">
+				南投縣
+			</option>
+			<option value="4">
+				彰化縣
+			</option>
+			<option value="11">
+				雲林縣
+			</option>
+			<option value="12">
+				嘉義縣
+			</option>
+			<option value="7">
+				台南市
+			</option>
+			<option value="13">
+				MICR票據-台北總所轄區
+			</option>
+			<option value="14">
+				MICR票據-台中市分所轄區
+			</option>
+			<option value="15">
+				MICR票據-高雄市分所轄區
+			</option>
+			<option value="16">
+				非MICR票據交換單位
+			</option>
+			<option value="17">
+				未參加交換
+			</option>
+		</select>
+		<div id="F_record">
+			共?筆資料
+		</div>
+	</form>
+	<div id="AF_input_content">
+		資料庫讀取中..請稍後..
+	</div>
+	<div id="F_foot">
+	</div>
+</div>						
+						
+<div id="AF_position">
+	<!--AF為農漁會縮寫-->
+	<div id="F_position">
+		<!--F為FORM縮寫-->
+		<div id="F_style">
+			<span>
+				農漁會查詢結果
+			</span>
+		</div>
+	</div>
+	<!----------------------------List-------------->
+	<div id="AF_List">
+		<!-------------DB----------->
+		<div id="AF_DB">
+			<div id="AF_ID">
+				<span id="AF_ID_content">
+				</span>
+			</div>
+			<div id="AF_name">
+				<span id="AF_name_content">
+				</span>
+			</div>
+			<div id="AF_onlineDay" class="AF_data">
+				資訊共用上線日：
+				<span id="AF_onlineDay_content">
+				</span>
+			</div>
+			<div id="AF_oldSystem" class="AF_data">
+				原資訊系統：
+				<span id="AF_oldSystem_content">
+				</span>
+			</div>
+			<div id="AF_switchUnit" class="AF_data">
+				票交所交換單位：
+				<span id="AF_switchUnit_content">
+				</span>
+			</div>
+			<div id="AF_areaCode" class="AF_data">
+				付款行交換區碼：
+				<span id="AF_areaCode_content">
+				</span>
+			</div>
+			<div id="AF_check" class="AF_data">
+				外埠票委託票交所交換：
+				<span id="AF_check_content">
+				</span>
+			</div>
+			<div id="AF_product" class="AF_data">
+				<div style="float:left;" id="AF_product_title">
+					<!--js-->
+				</div>
+				<div style="float:left; max-width:75%" id="AF_product_content">
+				</div>
+				<div class="cle">
+				</div>
+			</div>
+			<div id="AF_web" class="AF_data">
+				網站：
+				<span id="AF_web_content">
+				</span>
+			</div>
+		</div>
+		<!---------TABLE--------->
+		<div id="AF_Table">
+		</div>
+		<div id="AF_Map">
+		</div>
+	</div>
+	<!----------------------------/List--------------------->
+</div>
+						
+						
+						
+						
+						
+<!--使用說明 Modal -->
+<div class="modal fade" id="UsingModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					使用說明
+				</h4>
+			</div>
+			<div class="modal-body">
+				<p class="modal_p">
+					<span class="modal_icon">
+						代號搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;請輸入新農漁會代號三碼，例如：635、650、919。
+				</p>
+				<p class="modal_p">
+					<span class="modal_icon">
+						名稱搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;請輸入農漁會中文名稱，例如：線西鄉農會，或簡短輸入，例如：線西。
+				</p>
+				<p class="modal_p">
+					<span class="modal_icon">
+						上線日搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;請輸入日期yyymmdd，例如：1051219、1060327。
+				</p>
+				<p class="modal_p">
+					<span class="modal_icon">
+						地區搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;請輸入農漁會縣市別，例如：彰化縣，或簡短輸入，例如：彰化。
+				</p>
+				<p class="modal_p">
+					<span class="modal_icon">
+						資料搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;請輸入分會名稱，例如:管嶼。或輸入電話xx-xxxxxxx，例如：04-7583571。或通匯代號，例如：6350017。
+				</p>
+				<p class="modal_p">
+					<span class="modal_icon">
+						綜合搜尋&nbsp;
+						<i class="glyphicon glyphicon-search">
+						</i>
+					</span>
+					&nbsp;以上所有條件皆列入篩選。
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					關閉
+				</button>
+			</div>
+		</div>
+		<!-- /Modal content-->
+	</div>
+</div>
+<!--/使用說明 Modal -->
+<!--輸入空值 Modal -->
+<div class="modal fade" id="NullModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header ">
+				<button type="button" class="close " data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					錯誤
+				</h4>
+			</div>
+			<div class="modal-body">
+				<p class="modal_p">
+					您尚未輸入篩選條件，請在&nbsp;
+					<span class="modal_icon">
+						<i class="glyphicon glyphicon-pencil">
+						</i>
+						&nbsp;搜尋條件
+					</span>
+					&nbsp;輸入篩選條件，或在&nbsp;
+					<span class="modal_icon">
+						&nbsp;
+						<i class="glyphicon glyphicon-sunglasses">
+						</i>
+						&nbsp;使用說明
+					</span>
+					&nbsp;查看說明文件。
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					關閉
+				</button>
+			</div>
+		</div>
+		<!-- /Modal content-->
+	</div>
+</div>
+<!--/輸入空值 Modal -->
+<!--查無結果 Modal -->
+<div class="modal fade" id="ErrorModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header ">
+				<button type="button" class="close " data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					錯誤
+				</h4>
+			</div>
+			<div class="modal-body">
+				<br>
+				<p class="modal_p">
+					您的篩選條件查無結果，請重設篩選條件，或在&nbsp;
+					<span class="modal_icon">
+						&nbsp;
+						<i class="glyphicon glyphicon-sunglasses">
+						</i>
+						&nbsp;使用說明
+					</span>
+					&nbsp;查看說明文件。
+				</p>
+				<br>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					關閉
+				</button>
+			</div>
+		</div>
+		<!-- /Modal content-->
+	</div>
+</div>
+<!--/查無結果 Modal -->
+
+<script src="Bootstrap/js/bootstrap.min.js"></script> 
+<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 				
+<link href="mySelect.css" rel="stylesheet" type="text/css"> 
+<link href="mySelectPatch.css" rel="stylesheet" type="text/css"> 						
+<script src="af.js"></script>  								
+<script src="mySelect.js"></script>	
+<!--content-->						
+						
+						
+						
+						
+						
+						
+
+					</div>
+				</div>    
+			</div>
+			<div id="main_dark" class="main_dark"> </div>
+	 </div>
+	 <div id="publicFooter">
+			<script>
+			  var JSstring04 = 'mainHTML/mainHTML_data2.js?'+Math.random();    
+			  document.write("<script src="+JSstring04+"></scr"+"ipt>");	
+			</script>  
+	 </div>
+	<script>
+		var JSstring01 = 'mainHTML/mainHTML.css?v={'+Math.random()+'}';    
+		document.write("<link href="+JSstring01+" rel=\"stylesheet\" type=\"text/css\">");  
+		var JSstring02 = 'mainHTML/mainHTML.js?'+Math.random();    
+		document.write("<script src="+JSstring02+"></scr"+"ipt>");
+	</script> 
+</div>	
+	
+<script src="mainHTML/loadframe_show.js"></script>  	
+</body>
+</html>
