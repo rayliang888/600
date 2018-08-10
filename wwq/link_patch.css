@@ -1,0 +1,49 @@
+.peopleTalk_talkBox_ContentBox{
+	box-sizing: border-box;
+}
+.peopleTalk_talkBox_ContentBox {
+    background-color: #8a8;
+	color: #222;
+
+}
+.triangle1{
+	border-color: transparent #8a8 transparent transparent;
+}
+.imgLink{
+	background-color: #ddd;
+}
+.linkNav{
+	margin-top:-21px;
+}
+.connectBox{
+	padding: 30px;
+}
+@media(min-width:600px){
+	.connectBox{
+		padding: 50px;
+	}
+}
+.imgLink_inner{
+	margin-top: 0;
+}
+.titleText{
+	text-shadow: #333 1px 1px 2px;
+	margin-bottom: 10px;
+	font-size: 35px;
+	font-weight:100;
+	
+}
+.box-item{
+	border-color: #eee	;
+	border-width: 2px;
+	border-style: solid;
+	box-sizing:border-box;
+	border-radius: 5px;
+	
+	box-shadow: 3px 3px 9px 0px #242424;
+	-webkit-box-shadow: 3px 3px 9px 0px #242424;
+	-moz-box-shadow: 3px 3px 9px 0px #242424;
+	-o-box-shadow: 3px 3px 9px 0px #242424;
+	
+	height: 130px;
+}

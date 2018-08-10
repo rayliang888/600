@@ -1,0 +1,41 @@
+    .goTop{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 60px;
+        right: 10px;
+        background-color: #8cd9b3;
+        cursor: pointer;
+        border-radius:50px;
+		z-index: 999999;
+    }
+    .goTop_inner{
+        width: 52px;
+        height: 52px;
+        position: relative;
+        background-color: #39ac73;
+        border-radius:50px;
+        top:4px;
+        left: 4px;
+    }
+    
+    .goTop:hover .goTop_inner{
+        width: 60px;
+        height: 60px;
+        top:0px;
+        left: 0px;
+        transition: 1s;
+       /* background-color: #339966;*/
+    }
+    .goTop:hover  .goTop_p{
+        padding-top:19px;
+        padding-left: 6px;
+        transition: 1s;
+    }
+    
+    .goTop_p{
+        padding-top:15px;
+        padding-left: 2px;
+        font-size: 16px;
+        color: #ecf9f2;
+    }
