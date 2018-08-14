@@ -1,0 +1,53 @@
+.downloan_box{
+	
+}
+.downloan_boxItem{
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	position: relative;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 18px;
+}
+.downloan_boxItem1{
+	background-color:#cdec98;
+	border-color: #84a27c;
+}
+.downloan_a{
+	display: block;
+}
+.downloan_numbeBox{
+	width: 35px;
+	height:35px;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* Internet Explorer */
+	-moz-transform:rotate(45deg); /* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	position: absolute;
+	top:0px;
+	left: 0px;
+	border-radius:5px;
+	border-style:inset;
+	border-width: 2px;
+}
+.downloan_numberBox1{
+	background-color:#84a27c;
+	border-color: #fff;
+}
+.downloan_number{
+	display: block;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /* Internet Explorer */
+	-moz-transform:rotate(-45deg); /* Firefox */
+	-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-45deg); /* Opera */	
+	padding-left: 3px;
+	color: #fff;
+	font-size: 18px;
+	
+}
