@@ -34,6 +34,7 @@
 	border-radius:5px;
 	border-style:inset;
 	border-width: 2px;
+	box-sizing: border-box;
 }
 .downloan_numberBox1{
 	background-color:#84a27c;
